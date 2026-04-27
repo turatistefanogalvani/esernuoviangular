@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Smart Weather Dashboard</h1>
+
+  <div class="list-group">
+    @for (city of myCities; track city.city) {
+      <div class="city-card" (click)="select(city)">
+        <h3>{{ city.city }}</h3>
+        <p>{{ city.temperature }}°C - {{ city.condition }} {{ city.icon }}</p>
+      </div>
+    }
+  </div>
+
+  <hr>
+
+  @if (selectedCity) {
+    <app-weather-detail [weatherData]="selectedCity"></app-weather-detail>
+  } @else {
+    <p>Clicca su una città per vedere i dettagli tecnici.</p>
+  }
+</div>

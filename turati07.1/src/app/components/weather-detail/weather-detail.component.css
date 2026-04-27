@@ -1,0 +1,29 @@
+.detail-box {
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+
+/* Classi dinamiche per lo sfondo */
+.soleggiato {
+  background: linear-gradient(to right, #f7b733, #fc4a1a);
+}
+
+.pioggia {
+  background: linear-gradient(to right, #4b6cb7, #182848);
+}
+
+.nuvoloso {
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+.neve {
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  color: #333;
+}
+
+.stats {
+  font-size: 1.2rem;
+}

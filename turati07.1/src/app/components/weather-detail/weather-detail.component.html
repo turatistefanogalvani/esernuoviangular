@@ -1,0 +1,7 @@
+<div class="detail-box" [class]="getBackgroundClass()">
+  <h2>Dettagli Tecnici: {{ weatherData?.city }}</h2>
+  <div class="stats">
+    <p><strong>Umidità:</strong> {{ weatherData?.humidity }}%</p>
+    <p><strong>Vento:</strong> {{ weatherData?.wind }} km/h</p>
+  </div>
+</div>
